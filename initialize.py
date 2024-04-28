@@ -3,7 +3,9 @@ from config import save_file_f,save_file_b,astro_pars_f,astro_pars_b,cache_dir,t
 import sys
 import os
 
+# create the save file
 f = h5py.File(save_file_f, "w")
+# store the parameters
 f.create_group('fiducial_pars')
 grp = f['fiducial_pars']
 grp.attrs.update(astro_pars_f)
