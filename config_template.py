@@ -68,3 +68,6 @@ mu_beam = 0.26755280609040966
 
 # number of clustering wedges above the foreground wedge
 n_wedge = 3
+
+# rngs
+rng_list = np.arange(37,47)
