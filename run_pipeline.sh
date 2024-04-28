@@ -17,12 +17,7 @@ source activate sim
 module load cuda/11.8
 
 # in each realization
-mkdir rng_$SLURM_ARRAY_TASK_ID
 cd rng_$SLURM_ARRAY_TASK_ID
-cp ../config_template.py config.py
-cp ../run21cmfast.py run21cmfast.py
-cp ../signalcov.py signalcov.py
-
 echo $PWD
 
 echo ">>> run 21cmfast"
