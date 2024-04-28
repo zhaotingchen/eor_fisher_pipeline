@@ -21,3 +21,4 @@ MANIFEST
 *.pyc
 core
 rng*
+*.out
